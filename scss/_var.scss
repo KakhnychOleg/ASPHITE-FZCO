@@ -1,0 +1,51 @@
+// Breakpoint & Container
+$containerWidth: 1080 + px;
+$breakpoint1200: 1199.98 + px;
+$breakpoint930: 929.98 + px;
+$breakpoint768: 767.98 + px;
+$breakpoint480: 479.98 + px;
+
+// Colors
+$titleColor: #2962EF;
+$subtitleColor : #232427;
+$buttonColor : yellow;
+$primary: #FAF9FA;
+$secondary: #2962EF;
+$blueDark: #1046ce;
+$footerColor: #c2c2c2;
+$inputHover: #00920ffd;
+
+
+// _Class
+._text-center {
+   text-align: center;
+}
+
+._title {
+   font-size: 40px;
+   line-height: 140%;
+   text-transform: uppercase;
+   color: $titleColor;
+}
+
+._subtitle {
+   font-size: 20px;
+   color: $subtitleColor;
+}
+
+// Button
+._button {
+   background: transparent;
+   border: 1px solid $buttonColor;
+   border-radius: 15px;
+   text-transform: uppercase;
+   color: $buttonColor;
+   padding: 10px 20px;
+   transition: all .3s ease-in;
+
+   &:hover {
+      background: $buttonColor;
+      color: #000;
+   }
+}
+

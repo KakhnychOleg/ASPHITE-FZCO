@@ -1,0 +1,32 @@
+// Default
+@import "_reset.scss";
+@import "_var.scss";
+@import "_accordion.scss";
+@import "_slider.scss";
+@import "_popup.scss";
+@import "_form.scss";
+@import "_tabs.scss";
+
+//Block global
+@import "_header.scss";
+@import "_footer.scss";
+
+//Block 
+@import "_block.scss";
+@import "_hero.scss";
+
+
+.container {
+   max-width: $containerWidth;
+   margin: 0 auto;
+   padding: 0 20px;
+
+   font-family: 'Roboto', sans-serif;
+
+   // min-height: 100%;
+   overflow: clip;
+}
+
+body.lock {
+   overflow: hidden;
+}
