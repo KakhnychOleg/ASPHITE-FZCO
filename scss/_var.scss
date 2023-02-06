@@ -57,7 +57,6 @@ $heroTitle: #fff;
    background: transparent;
    border: 2px solid $buttonColor;
    border-radius: 30px;
-   color: #fff;
    padding: 26px 58px;
 
    transition: all .3s ease-in;
@@ -72,7 +71,16 @@ $heroTitle: #fff;
    justify-content: center;
    margin: 0 auto;
 }
+._button-white {
+   color: #fff;
+}
+._button-dark {
+   color: #4F4A37;
+}
 
 ._mb-25 {
    margin-bottom: 25px;
+}
+._mb-60 {
+   margin-bottom: 60px;
 }

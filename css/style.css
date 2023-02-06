@@ -90,7 +90,6 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
   border: 2px solid #FCDB5A;
   border-radius: 30px;
-  color: #fff;
   padding: 26px 58px;
   transition: all 0.3s ease-in;
 }
@@ -104,8 +103,20 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
+._button-white {
+  color: #fff;
+}
+
+._button-dark {
+  color: #4F4A37;
+}
+
 ._mb-25 {
   margin-bottom: 25px;
+}
+
+._mb-60 {
+  margin-bottom: 60px;
 }
 
 .slider {
@@ -444,7 +455,8 @@ h1, h2, h3, h4, h5, h6 {
 .menu__list {
   display: flex;
   align-items: center;
-  column-gap: 50px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
   row-gap: 5px;
   flex-wrap: wrap;
 }
@@ -623,7 +635,8 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   line-height: 125%;
   font-size: 90px;
-  animation: text-img 5s linear infinite alternate;
+  -webkit-animation: text-img 5s linear infinite alternate;
+          animation: text-img 5s linear infinite alternate;
 }
 .block-img-text .img-text {
   font-weight: 900;
@@ -638,6 +651,14 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 479.98px) {
   .block-img-text {
     font-size: 40px;
+  }
+}
+@-webkit-keyframes text-img {
+  0% {
+    background-position: top;
+  }
+  100% {
+    background-position: bottom;
   }
 }
 @keyframes text-img {
@@ -849,6 +870,45 @@ h1, h2, h3, h4, h5, h6 {
   }
   .number__item {
     margin-bottom: 25px;
+  }
+}
+.agro-bg {
+  background: url("../img/agro.png") center/contain no-repeat;
+  width: 100%;
+}
+
+.household {
+  background: url("../img/household.png") center/contain no-repeat;
+  width: 100%;
+}
+
+.agro {
+  padding: 150px 0;
+  display: flex;
+  align-items: center;
+  max-width: 1116px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.agro__img {
+  max-width: 360px;
+  width: 100%;
+}
+.agro__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #666;
+  max-width: 344px;
+}
+
+@media (max-width: 767.98px) {
+  .agro {
+    padding: 100px 0;
+    flex-direction: column;
+    gap: 40px;
   }
 }
 .container {
