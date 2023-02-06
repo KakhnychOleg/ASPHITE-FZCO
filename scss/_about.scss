@@ -1,0 +1,55 @@
+.about {
+   margin: 150px 0 100px 0;
+
+   &__subtitle {
+      max-width: 570px;
+      margin: 0 auto;
+      
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      
+      color: $textColor;
+   }
+
+   &__card {
+      margin-top: 50px;
+      margin-bottom: 150px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: flex-start;
+   }
+
+   &__item {
+      text-align: center;
+      max-width: 120px;
+
+      img {
+         transition: all .3s;
+      }
+
+      &:hover img {
+         transform: scale(1.1);
+      }
+   }
+
+   &__img {
+      margin-bottom: 25px;
+   }
+}
+
+@media (max-width: $breakpoint768) {
+   .about {
+      margin: 100px 0 50px 0;
+   }
+   .about__card {
+      margin-bottom: 100px;
+      width: 100%;
+   }
+   .about__card {
+      justify-content: center;
+      gap: 30px;
+   }
+}

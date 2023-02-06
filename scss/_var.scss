@@ -1,19 +1,23 @@
 // Breakpoint & Container
-$containerWidth: 1080 + px;
+$containerWidth: 1300 + px;
 $breakpoint1200: 1199.98 + px;
+$breakpoint1024: 1023.98 + px;
 $breakpoint930: 929.98 + px;
 $breakpoint768: 767.98 + px;
 $breakpoint480: 479.98 + px;
 
-// Colors
-$titleColor: #2962EF;
-$subtitleColor : #232427;
-$buttonColor : yellow;
+// Colors 
+$titleColor: #333;
+$subtitleColor : #333;
+$buttonColor : #FCDB5A;
+$buttonColorHover : #eece4f;
+$textColor: #666;
+$textPrimeryColor: #B3B3B3;
 $primary: #FAF9FA;
 $secondary: #2962EF;
-$blueDark: #1046ce;
-$footerColor: #c2c2c2;
+$footerColor: #fff;
 $inputHover: #00920ffd;
+$heroTitle: #fff;
 
 
 // _Class
@@ -22,30 +26,53 @@ $inputHover: #00920ffd;
 }
 
 ._title {
+   font-family: 'Raleway', sans-serif;
+   font-style: normal;
+   font-weight: 900;
    font-size: 40px;
-   line-height: 140%;
+   line-height: 44px;
    text-transform: uppercase;
    color: $titleColor;
 }
 
 ._subtitle {
-   font-size: 20px;
+   font-family: 'Raleway', sans-serif;   
+   font-style: normal;
+   font-weight: 300;
+   font-size: 40px;
+   line-height: 44px;
+   text-transform: uppercase;
    color: $subtitleColor;
 }
 
 // Button
 ._button {
-   background: transparent;
-   border: 1px solid $buttonColor;
-   border-radius: 15px;
+   font-family: 'Raleway', sans-serif;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 13px;
+   line-height: 13px;
    text-transform: uppercase;
-   color: $buttonColor;
-   padding: 10px 20px;
+
+   background: transparent;
+   border: 2px solid $buttonColor;
+   border-radius: 30px;
+   color: #fff;
+   padding: 26px 58px;
+
    transition: all .3s ease-in;
 
    &:hover {
       background: $buttonColor;
-      color: #000;
    }
 }
 
+._button-center {
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+}
+
+._mb-25 {
+   margin-bottom: 25px;
+}

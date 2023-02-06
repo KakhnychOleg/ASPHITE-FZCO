@@ -1,11 +1,8 @@
 // Default
 @import "_reset.scss";
 @import "_var.scss";
-@import "_accordion.scss";
 @import "_slider.scss";
-@import "_popup.scss";
 @import "_form.scss";
-@import "_tabs.scss";
 
 //Block global
 @import "_header.scss";
@@ -14,17 +11,18 @@
 //Block 
 @import "_block.scss";
 @import "_hero.scss";
+@import "_about.scss";
 
 
 .container {
    max-width: $containerWidth;
    margin: 0 auto;
    padding: 0 20px;
-
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Open Sans', sans-serif;
 
    // min-height: 100%;
    overflow: clip;
+   z-index: 2;
 }
 
 body.lock {
