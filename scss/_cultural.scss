@@ -1,0 +1,135 @@
+.cultural {
+
+   // .cultural__list
+   &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      // flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 40px;
+   }
+
+   // .cultural__item
+   &__item {
+      position: relative;
+      box-sizing: border-box;
+      // flex: 1 1 33.3%;
+   }
+
+   // .cultural__images
+   &__images {
+      overflow: hidden;
+      position: relative;
+   }
+
+   // .cultural__img
+   &__img {
+      max-width: 420px;
+      max-height: 280px;
+      width: 100%;
+      height: 100%;
+      // padding-bottom: 100%;
+      // background-size: contain;
+      transition: all .5s;
+      
+      &img {
+         max-width: 420px;
+         max-height: 280px;
+         position: absolute;
+         top: 0;
+         left: 0;
+         object-fit: contain;
+      }
+
+      &:hover {
+         transform: scale(1.05);
+      } 
+   }
+
+   // .cultural__number
+   &__number {
+      position: absolute;
+      content: '';
+      left: 20px;
+      top: 0;
+      background: $buttonColor;
+      padding: 20px 10px;
+
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 30px;
+      line-height: 25px;
+      text-transform: capitalize;
+      
+      color: $titleColor;
+   }
+
+   // .cultural__block
+   &__block {
+      padding: 25px 12px 40px 12px;
+      background: #fff;
+      position: relative;
+      // left: 20px;
+      margin: 0 auto;
+      top: -40px;
+      max-width: 355px;
+      width: 100%;
+      text-align: center;
+   }
+
+   // .cultural__suptitle
+   &__suptitle {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      text-transform: uppercase;
+      
+      color: #DDC051;
+      margin-bottom: 11px;
+   }
+
+   // .cultural__title
+   &__title {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 22px;      
+      color: $titleColor;
+      margin-bottom: 11px;
+   }
+
+   // .cultural__text
+   &__text {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 22px;      
+      color: $textColor;
+   }
+}
+
+@media (max-width: $breakpoint1024) {
+   .cultural__list {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+}
+
+@media (max-width: $breakpoint480) {
+   .cultural__item {
+      width: 100%;
+   }
+   
+   .cultural__block {
+      padding: 25px 12px 30px 12px;
+      margin: 0 auto;
+      top: -40px;
+      max-width: 325px;
+      width: 100%;
+      box-sizing: border-box;
+   }
+}
