@@ -1,0 +1,76 @@
+.app {
+   background: radial-gradient(47.15% 89.09% at 51.97% 52.85%, #D9D9D9 0%, #F2F2F2 100%);
+   padding:0 20px 100px 86px;
+
+   position: relative;
+   overflow: hidden;
+
+   @media  (max-width: $breakpoint768) {
+      padding:0 20px 70px 46px;
+   }
+   @media  (max-width: $breakpoint480) {
+      padding:0 20px 50px 20px;
+   }
+
+   &::before {
+      position: absolute;
+      content: '';
+      right: 82px;
+      top: -52px;
+      width: 15px;
+      height: 104px;
+      background: url('../img/hero-line.png') no-repeat
+   }
+   &::after {
+      position: absolute;
+      content: '';
+      right: 40%;
+      bottom: -52px;
+      width: 15px;
+      height: 104px;
+      background: url('../img/hero-line.png') no-repeat
+   }
+
+   &__block {
+      display: flex;
+      align-items: center;
+
+      @media  (max-width: $breakpoint1024) {
+         flex-wrap: wrap;
+      }
+   }
+
+   &__title {
+      max-width: 512px;
+      margin-top: 50px;
+      z-index: 5; 
+      text-transform: capitalize;
+
+      @media  (max-width: $breakpoint480) {
+         margin-bottom: 30px;
+      }
+   }
+
+   &__subtitle {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: $textColor;
+      max-width: 444px;
+      text-transform: initial;
+   }
+
+   &__images {
+      position: relative;
+      right: 0;
+      top: 0;
+      z-index: 0;
+   }
+
+   &__img {
+      max-width: 814px;
+      width: 100%;
+   }
+}

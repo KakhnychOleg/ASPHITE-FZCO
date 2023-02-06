@@ -44,3 +44,10 @@
       gap: 40px;
    }
 }
+@media (max-width: $breakpoint480) {
+   .agro {
+      padding: 60px 0;
+      flex-direction: column;
+      gap: 40px;
+   }
+}
