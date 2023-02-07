@@ -123,22 +123,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 60px;
 }
 
-.slider {
-  border: 1px solid #000;
-  border-radius: 15px;
-  margin: 50px 0;
-  text-align: center;
-  /* Navigation */
-}
-.slider__list {
-  border-radius: 15px;
-  background: #e3df76;
-  padding: 50px 0;
-  height: 300px;
-}
-
-/* arrow */
-/* dots */
 .form-section {
   background: radial-gradient(61.39% 203.97% at 56.88% 47.53%, #333333 0%, #1A1B1C 100%);
   padding: 150px 0;
